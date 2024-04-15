@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["src/**/__tests__/*"],
+  "include": [
+    "src/shims/env.d.ts",
+    "src/shims/components.d.ts",
+    "src/shims/auto-imports.d.ts",
+    "src/**/*",
+    "src/**/*.vue"
+  ]
+}
