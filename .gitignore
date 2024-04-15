@@ -12,7 +12,8 @@ node_modules
 dist
 dist-ssr
 coverage
-credentials
+credentials/*
+!credentials/.keep
 *.local
 
 /cypress/videos/
